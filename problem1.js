@@ -19,26 +19,36 @@ function wordThing() {
       goodWord = true;
     }
   }
+  let answer = []
+  for(let i = 0; i < 3; i++) {
+    for(let j = i + 1; j < 4; j++) {
+      for(let k = j + 1; k < 5; k++) {
+        answer = [givenWord.charAt(i), givenWord.charAt(j), givenWord.charAt(k)];
+        document.write("<p>");
+        document.write(answer[0]+answer[1]+answer[2]);
+        document.write(" ");
+        document.write(answer[0]+answer[2]+answer[1]);
+        document.write(" ");
+        document.write(answer[1]+answer[2]+answer[0]);
+        document.write(" ");
+        document.write(answer[1]+answer[0]+answer[2]);
+        document.write(" ");
+        document.write(answer[2]+answer[1]+answer[0]);
+        document.write(" ");
+        document.write(answer[2]+answer[0]+answer[1]);
+        document.write("</p>");
+      }
+    }
+  }
+
+return answer;
+
 }
+
+
 
 window.addEventListener("load", wordThing, false);
 
-/*
-Gets all combinations. I should make a check to make sure that the returned
-words are of length 3.
 
-var tree = function(leafs) {
-  var branches = [];
-  if (leafs.length == 1) return leafs;
-  for (var k in leafs) {
-    var leaf = leafs[k];
-    tree(leafs.join('').replace(leaf, '').split('')).concat("").map(function(subtree) {
-      branches.push([leaf].concat(subtree));
-    });
-  }
-  return branches;
-};
-console.log(tree("abc".split('')).map(function(str) {
-  return str.join('')
-}))
-*/
+//Gets all combinations. I should make a check to make sure that the returned
+//words are of length 3.
