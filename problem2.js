@@ -30,7 +30,30 @@ function createQuiz() {
   quiz.innerHTML = output.join('');
 }
 
-function viewResults() {}
+function viewResults() {
+  let answerContainers = quiz.querySelectorAll('.answers');
+
+  let numCorrect = 0;
+
+  questions.forEach( (currentQuestion, questionNumber) => {
+
+    let answerContainer = answerContainers[questionNumber];
+    let selector = `input[name=question${questionNumber}]:checked`;
+    let userAnswer = (answerContainer.querySelector(selector) || {}).value;
+
+    if(userAnswer === currentQuestion.correctAnswer) {
+
+      numCorrect++;
+
+      answerContainers[questionNumber].style.color = 'lightgreen';
+    }
+    else {
+      answerContainers[questionNumber].style.color = 'red';
+    }
+  });
+
+  results.innerHTML = `${numCorrect} out of ${questions.length}`;
+}
 
 createQuiz();
 submitButton.addEventListener('click', viewResults)
