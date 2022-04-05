@@ -103,3 +103,5 @@ let questions = [
     correctAnswer: "a"
   }
 ];
+
+window.addEventListener("load", createQuiz, false);
