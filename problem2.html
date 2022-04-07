@@ -2,69 +2,72 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Quiz</title>
+    <script src="problem2.js"></script>
   </head>
   <body>
     <h1>Quiz Thing</h1>
-  <h2>Question 1</h2>
-  <p>HSU Mascot is: </p>
-  <form>
-    <input type="radio" id="multipleQ" name="question1" value="ThiccFoot">
-    <label for="multipleQ">ThiccFoot</label><br>
-    <input type="radio" id="multipleQ" name="question1" value="Kraken">
-    <label for="multipleQ">Kraken</label><br>
-    <input type="radio" id="multipleQ" name="question1" value="Lumberjack">
-    <label for="multipleQ">Lumberjack</label><br>
-   </form>
+    <h2>Your Score</h2>
+    <h2 id="score"></h2>
+    <h2>Question 1</h2>
+    <p>HSU Mascot is: </p>
+    <form id="question1">
+      <input type="radio" id="multipleQa" name="question1" value="ThiccFoot">
+      <label for="multipleQa">ThiccFoot</label><br>
+      <input type="radio" id="multipleQb" name="question1" value="Kraken">
+      <label for="multipleQb">Kraken</label><br>
+      <input type="radio" id="multipleQc" name="question1" value="Lumberjack">
+      <label for="multipleQc">Lumberjack</label><br>
+     </form>
 
-   <h2>Question 2</h2>
-   <p>What is Dr. Racket? </p>
-   <form>
-     <input type="radio" id="multipleQ" name="question2" value="soda">
-     <label for="multipleQ">Dr. Racket is like a soda or something.</label><br>
-     <input type="radio" id="multipleQ" name="question2" value="programming">
-     <label for="multipleQ">A programming language.</label><br>
-     <input type="radio" id="multipleQ" name="question2" value="professor">
-     <label for="multipleQ">An evil Dr who is too smart for his own good.</label><br>
-   </form>
+     <h2>Question 2</h2>
+     <p>What is Dr. Racket? </p>
+     <form id="question2">
+       <input type="radio" id="multipleQa" name="question2" value="soda">
+       <label for="multipleQa">Dr. Racket is like a soda or something.</label><br>
+       <input type="radio" id="multipleQb" name="question2" value="programming">
+       <label for="multipleQb">A programming language.</label><br>
+       <input type="radio" id="multipleQc" name="question2" value="professor">
+       <label for="multipleQc">An evil Dr who is too smart for his own good.</label><br>
+     </form>
 
-   <h2>Question 3</h2>
-   <p>How do I initialize am int variable in C++?</p>
-   <form>
-     <input type="radio" id="multipleQ" name="question3" value="int">
-     <label for="multipleQ">int x = 5;</label><br>
-     <input type="radio" id="multipleQ" name="question3" value="x">
-     <label for="multipleQ">x = 5;</label><br>
-     <input type="radio" id="multipleQ" name="question3" value="let">
-     <label for="multipleQ">let x = 5;</label><br>
-   </form>
-
-
-   <h2>Question 4</h2>
-   <p>Java and JavaScript are virtually the same</p>
-   <form>
-     <input type="radio" id="trueOrFalse" name="question4" value="True">
-     <label for="trueOrFalse">True</label><br>
-     <input type="radio" id="trueOrFalse" name="question4" value="False">
-     <label for="trueOrFalse">False</label><br>
-   </form>
+     <h2>Question 3</h2>
+     <p>How do I initialize am int variable in C++?</p>
+     <form id="question3">
+       <input type="radio" id="multipleQa" name="question3" value="int">
+       <label for="multipleQa">int x = 5;</label><br>
+       <input type="radio" id="multipleQb" name="question3" value="x">
+       <label for="multipleQb">x = 5;</label><br>
+       <input type="radio" id="multipleQc" name="question3" value="let">
+       <label for="multipleQc">let x = 5;</label><br>
+     </form>
 
 
-   <h2>Question 5</h2>
-   <p>Python is widely used for data analysis</p>
-   <form>
-     <input type="radio" id="trueOrFalse" name="question5" value="True">
-     <label for="trueOrFalse">True</label><br>
-     <input type="radio" id="trueOrFalse" name="question5" value="False">
-     <label for="trueOrFalse">False</label><br>
-   </form>
+     <h2>Question 4</h2>
+     <p>Java and JavaScript are virtually the same</p>
+     <form id="question4">
+       <input type="radio" id="trueOrFalsea" name="question4" value="True">
+       <label for="trueOrFalsea">True</label><br>
+       <input type="radio" id="trueOrFalseb" name="question4" value="False">
+       <label for="trueOrFalseb">False</label><br>
+     </form>
 
-   <h2>Question 6</h2>
-   <p>PHP used to stand for ________ Home Page</p>
-   <form>
-     <input type="text" id="question6" name="question5">
-     <label for="question6"></label><br>
-   </form>
 
+     <h2>Question 5</h2>
+     <p>Python is widely used for data analysis</p>
+     <form id="question5">
+       <input type="radio" id="trueOrFalsea" name="question5" value="True">
+       <label for="trueOrFalsea">True</label><br>
+       <input type="radio" id="trueOrFalseb" name="question5" value="False">
+       <label for="trueOrFalseb">False</label><br>
+     </form>
+
+     <h2>Question 6</h2>
+     <p>PHP used to stand for ________ Home Page</p>
+     <form id="question6">
+       <input type="text" id="question6">
+       <label for="question6"></label><br>
+     </form>
+     <button onclick = "startQuiz()" value="submit">Click to submit answers!</button>
   </body>
 </html>
