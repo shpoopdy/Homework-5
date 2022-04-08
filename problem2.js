@@ -14,7 +14,7 @@ function startQuiz() {
   scores.innerHTML = right;
 
   for(let i = 0; i < inputs.length; i++) {
-    labels[i].style = "color:black";
+    labels[i].style = "color:#ffffff";
     }
 
 
@@ -37,7 +37,7 @@ function startQuiz() {
   let labels2 = question2.getElementsByTagName("label");
 
   for(let i = 0; i < inputs2.length; i++) {
-    labels2[i].style = "color:black";
+    labels2[i].style = "color:#ffffff";
     }
 
   for(let i = 0; i < inputs2.length; i++) {
@@ -58,7 +58,7 @@ function startQuiz() {
   let labels3 = question3.getElementsByTagName("label");
 
   for(let i = 0; i < inputs3.length; i++) {
-    labels3[i].style = "color:black";
+    labels3[i].style = "color:#ffffff";
     }
 
   for(let i = 0; i < inputs3.length; i++) {
@@ -79,7 +79,7 @@ function startQuiz() {
   let labels4 = question4.getElementsByTagName("label");
 
   for(let i = 0; i < inputs4.length; i++) {
-    labels4[i].style = "color:black";
+    labels4[i].style = "color:#ffffff";
     }
 
   for(let i = 0; i < inputs4.length; i++) {
@@ -100,7 +100,7 @@ function startQuiz() {
   let labels5 = question5.getElementsByTagName("label");
 
   for(let i = 0; i < inputs5.length; i++) {
-    labels5[i].style = "color:black";
+    labels5[i].style = "color:#ffffff";
     }
 
   for(let i = 0; i < inputs5.length; i++) {
