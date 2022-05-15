@@ -1,4 +1,4 @@
-# 328 Web Apps using Databases
+# *328 Web Apps using Databases*
 ## Problem 1
 
 Write a JavaScript program that reads a five letter word from the user and produces all possible three letter (combination/words) that can be derived from the letters of the five letter word. Output the results to an HTML5 text area.
